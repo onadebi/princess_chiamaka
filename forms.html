@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms tutorials</title>
+</head>
+
+<body>
+    <div>
+        <h3>Form tutorials displayed in the viewport</h3>
+    </div>
+    <section>
+        <span>Common Form elements</span>
+        <h5>Most form elements are in one way or another, INPUT elements</h5>
+        <ul>
+            <li>Text box</li>
+            <li>TextArea</li>
+            <li>Checkbox</li>
+            <li>Radio button</li>
+            <li>Select</li>
+            <li>Button - Reset, Submit</li>
+        </ul>
+    </section>
+
+    <h1 style="text-decoration: underline; color: blue">Contact Page</h1>
+    <form>
+        <a href="mailto:chibagas@chibagsgroup.com">chibagas@chibagsgroup.com</a><br/>
+        <a href="tel:2348057253333">Call us</a><br/>
+
+
+        <label for="firstname" required="true">Full name:</label>
+        <input type="text" id="firstname"/>
+        <p/>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"/>
+        <p/>
+
+        <label for="MObile_phone">Mobile:</label>
+        <input type="tel" id="MObile_phone"/>
+        <p/>
+
+        <label for="dateOfDelivery">Delivery Date:</label>
+        <input type="datetime-local" id="dateOfDelivery"/>
+        <p/>
+
+
+        <label for="condition">Condition</label>
+         <select id="condition">
+            <option>Brand new</option>
+            <option>Refurbished</option>
+            <option>Used</option>
+         </select>   
+        <p/>
+
+        <h4 style="background-color: plum; padding:10px;">Bag variants</h4>
+        <input type="checkbox" id="pinkbag">Pink Bag</input>
+        <p/>
+        <input type="checkbox" id="greenbag">Green Bag</input>
+        <p/>
+        <input type="checkbox" id="bluebag">Blue Bag</input>
+        <p/>
+<!-- PADDING || MARGIN-->
+        <section>
+            <h5 style="background-color: green; font-size: 24px; color:white;padding:10px;margin-bottom: 15px;">Delivery option</h5>
+            <input type="radio" id="pickup" name="delivery" value="pickup"/>
+            <label for="pickup">Pick up</label>
+            <input type="radio" id="house_delivery" name="delivery"/>
+            <label for="house_delivery">Home delivery</label>
+            <input type="radio" id="express_house_delivery" name="delivery"/>
+            <label for="express_house_delivery">Express Home delivery</label>
+        </section>
+
+        <p>
+            <span style="font-size:20px;">Message:</span>
+            <br/>
+            <textarea id="message" rows="10" style="width: 100%; border:3px dashed yellow; padding:15px; font-size:24px"></textarea>
+        </p>
+
+        <br/>
+        <input button type="reset" value="Reset"/>  <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

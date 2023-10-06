@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+    <script></script>
+</head>
+<body>
+    <!-- COMMENTS -->
+    <!-- name : value => key : value=> name value pair -->
+    <form>
+        <label for="full_name" style="color:green; font-weight:bold; font-size:24px;">Full name</label>
+        <input type="text" id="full_name" placeholder="Full name" required/>
+        <p></p>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required="true"/>
+
+        <br/>
+        <p></p>
+        <button id="btnSubmit" type="submit">Submit</button> <button type="reset">Reset</button>
+    </form>
+
+
+    <!-- Convention : generally accepted standard -->
+    <!-- HTML: Defines the body structure of every webpage -->
+    <!-- CSS: Affect the look, stylel and feel of your websites -->
+    <!-- JavaScript: Defines the behaviour/Interactivity of your website -->
+    <!-- Document : this represents the current HTML webpage -->
+    <!-- Variables : var || let , const -->
+    <!-- Events -->
+    <!-- function: Behavior -->
+    <!-- + => Concatenation -->
+    <script>
+        let formFullName = document.getElementById('full_name');
+        let formEmail = document.getElementById('email');
+        let onaxSubmitEvent = document.getElementById('btnSubmit');
+        
+        onaxSubmitEvent.addEventListener('click',function(){
+            alert("Good day " +formFullName.value+ ". Your email is " +formEmail.value+ ".");
+        });
+    </script>
+</body>
+</html>
