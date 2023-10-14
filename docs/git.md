@@ -16,3 +16,8 @@ git status
 ```
 git init
 ```
+
+## To view the remote repositories connected with hte current initialized git code, use the below command:
+```
+git remote -v
+```
