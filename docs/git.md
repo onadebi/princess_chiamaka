@@ -27,3 +27,8 @@ Structure: git push <name_of_remote_address> <name_of_branch>
 ```
 git push princess_chiamaka main
 ```
+
+## To commit changes to the source control using git:
+```
+git commit -m "This is my commit messag"
+```
